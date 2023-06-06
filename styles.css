@@ -1,0 +1,27 @@
+@import url("styles/header.css");
+:root{
+    --cor-de-fundo: #b9f8b9;
+    --branco: #ffffff;
+    --degrade: linear-gradient(#070e1d , #7d7ec2 );
+    --laranja: #EB9b00;
+    --gradiente: linear-gradient(#fa18fa , #613261 );
+    --fonte_principal: "Poppins";
+    --azul: #002F52;
+    --fonte-secundario: "Josefin Sans";
+    --preto: #000000;
+    --cinza: #474646;
+    --cinza-claro: #858585;
+}
+
+body{
+    background-color: var(--degrade);
+    font-family: var(--fonte_principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.img_cabecalho{
+    width: 15%;
+    margin: 10px;
+}
+

@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset,css">
-    <title>Colegio Liria </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+   
+
+    <title>Colégio Liria Final</title>
 </head>
     <body>
-
+<!--cabecalho-->
         <header class="cabecalho">
             <div class="container">
                 <input type="checkbox" id="menu" class="container_botao"></imput>
@@ -17,23 +24,27 @@
                 </label>
                 <ul class="lista_menu">
                     <li class="lista_menu_titulo"> Categoria </li>
-                    <li class="lista-menu__item">
-                        <a href="#" class="lista-menu__link">Programação</a>
+                    <li class="lista_menu_item">
+                        <a href="#" class="lista_menu_link">Programação</a>
                     </li>
-                    <li class="lista-menu__item">
-                        <a href="#" class="lista-menu__link">Front-end</a>
+                    <li class="lista_menu_item">
+                        <a href="#" class="lista_menu_link">Front-end</a>
                     </li>
-                    <li class="lista-menu__item">
-                        <a href="#" class="lista-menu__link">Infraestrutura</a>
+                    <li class="lista_menu_item">
+                        <a href="#" class="lista_menu_link">Infraestrutura</a>
                     </li>
-                    <li class="lista-menu__item">
-                        <a href="#" class="lista-menu__link">Business</a>
+                    <li class="lista_menu_item">
+                        <a href="#" class="lista_menu_link">Business</a>
                     </li>
-                    <li class="lista-menu__item">
-                        <a href="#" class="lista-menu__link">Design & UX</a>
+                    <li class="lista_menu_item">
+                        <a href="#" class="lista_menu_link">Design & UX</a>
                     </li>
-                    <li class="lista_menu_item"><a href="#" class="lista_menu_link">Podcasts</a></li>
-                    <li class="lista_menu_item"><a href="#" class="lista_menu_link">Cardápio</a></li>
+                    <li class="lista_menu_item">
+                        <a href="#" class="lista_menu_link">Podcasts</a>
+                    </li>
+                    <li class="lista_menu_item">
+                        <a href="#" class="lista_menu_link">Cardápio</a>
+                    </li>
                 </ul>
             </div>
             <div class="container">    
@@ -49,33 +60,32 @@
         </section>
          <div class="card">
             <!-- 1º linha -->
-            <div class="card__descrição">
+            <div class="card_descrição">
                 <!-- 1º coluna -->
                 <div class="descrição">
-                    <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
-                    <h2 class="descrição__titulo-livro">Angular 11 e Firebase</h2>
-                    <p class="descrição__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                    <h3 class="descrição_titulo">Talvez você também se interesse por...</h3>
+                    <h2 class="descrição_titulo-livro">Angular 11 e Firebase</h2>
+                    <p class="descrição_texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
                 </div>
                 <!-- 2º coluna -->
-                <img src="img/Angular.svg" class="descrição__imagem">
+                <img src="img/Angular.svg" class="descrição_imagem">
             </div>
 
             <!-- 2º linha -->
-            <div class="card__botões">
+            <div class="card_botões">
                 <!-- 1º coluna -->
                 <ul class="botões">
-                    <li class="lista-menu__item">
-                    <li class="botões__item"><a href="#"><img src="img/Favoritos.svg" alt="Favoritar livro"></a></li>
-                    <li class="botões__item"><a href="#"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></a></li>
+                    <li class="botões_item"><a href="#"><img src="img/Favoritos.svg" alt="Favoritar livro"></a></li>
+                    <li class="botões_item"><a href="#"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></a></li>
                 </ul>
                 <!-- 2º coluna -->
-                <a href="#" class="botões__ancora">Saiba mais</a>
+                <a href="#" class="botões_ancora">Saiba mais</a>
             </div>
         </div>
     </section>
 
     <section class="carrossel">
-        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+        <h2 class="carrossel_titulo">Novos lançamentos</h2>
         <!-- Slider main container -->
         <div class="swiper">
             <!-- Additional required wrapper -->
@@ -88,83 +98,98 @@
                         alt="Livro sobre apache kafka e spring boot da alura books"></div>
                 <div class="swiper-slide"><img src="img/Liderança.svg"
                         alt="Livro sobre liderança em design da alura books"></div>
-                        <div class="swiper-slide"><img src="img/Javascript.svg"
-                                alt="Livro sobre javascript assertivo da alurabooks"></div>
-        …        <div class="card">
+                <div class="swiper-slide"><img src="img/Javascript.svg"
+                        alt="Livro sobre javascript assertivo da alurabooks"></div>
+                <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia front end"></div>
+                <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre portugol"></div>
+                <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="livro sobre acessibilidade"></div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="card">
             <!-- 1º linha -->
-            <div class="card__descrição">
+            <div class="card_descrição">
                 <!-- 1º coluna -->
                 <div class="descrição">
                     <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
-                    <h3 class="descrição__titulo">Autora do Mês</h3>
-                    <h2 class="descrição__titulo-livro">Juliana Agarikov</h2>
-                    <p class="descrição__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.
+                    <h3 class="descrição_titulo">Autora do Mês</h3>
+                    <h2 class="descrição_titulo-livro">Juliana Agarikov</h2>
+                    <p class="descrição_texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.
                     </p>
                 </div>
                 <!-- 2º coluna -->
-                <img src="img/Escritora.svg" class="descrição__imagem">
+                <img src="img/Escritora.svg" class="descrição_imagem">
             </div>
 
             <!-- 2º linha -->
-            <div class="card__botões">
+            <div class="card_botões">
                 <!-- 1º coluna -->
                 <ul class="botões">
-                    <li class="botões__item"><a href="#"><img src="img/Favoritos.svg" alt="Favoritar livro"></a></li>
-                    <li class="botões__item"><a href="#"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></a></li>
+                    <li class="botões_item"><a href="#"><img src="img/Favoritos.svg" alt="Favoritar livro"></a></li>
+                    <li class="botões_item"><a href="#"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></a></li>
                 </ul>
                 <!-- 2º coluna -->
-                <a href="#" class="botões__ancora">Saiba mais</a>
+                <a href="#" class="botões_ancora">Saiba mais</a>
             </div>
         </div>
     </section>
 
     <section class="tópicos">
-        <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
-        <ul class="tópicos__lista">
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Android</a>
+        <h2 class="tópicos_titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="tópicos_lista">
+            <li class="tópicos_item">
+                <a href="#" class="tópicos_link">Android</a>
             </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Marketing Digital</a>
+            <li class="tópicos_item">
+                <a href="#" class="tópicos_link">Marketing Digital</a>
             </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Agile</a>
+            <li class="tópicos_item">
+                <a href="#" class="tópicos_link">Agile</a>
             </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Startups</a>
+            <li class="tópicos_item">
+                <a href="#" class="tópicos_link">Startups</a>
             </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">HTML e CSS</a>
+            <li class="tópicos_item">
+                <a href="#" class="tópicos_link">HTML e CSS</a>
             </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Python</a>
+            <li class="tópicos_item">
+                <a href="#" class="tópicos_link">Python</a>
             </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">OO</a>
+            <li class="tópicos_item">
+                <a href="#" class="tópicos_link">OO</a>
             </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Java</a>
+            <li class="tópicos_item">
+                <a href="#" class="tópicos_link">Java</a>
             </li>
         </ul>
     </section>
 
     <section class="contato">
-        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-        <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
-        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+        <div class="contato_descrição">
+            <h2 class="contato_titulo">Fique por dentro das novidades!</h2>
+            <p class="contato_texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato_email">
     </section>
 
     <hr/>
 
     <footer class="rodapé">
-        <h2 class="rodapé__titulo">Nome do aluno</h2>
+        <h2 class="rodapé_titulo">Nome do aluno</h2>
     </footer>
 
-     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
+            speed: 40,
             spaceBetween: 10,
-            slidesPerView: 3,
+            slidesPerView: 4,
             pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets',
